@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url("img/mg_7_trophy_4k-HD.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
+}
+
+header h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: cyan;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+    text-shadow: 0 0 5px cyan;
+}
+
+nav ul li a:hover {
+    color: yellow;
+    text-shadow: 0 0 10px yellow, 0 0 20px yellow;
+}
+
+nav ul li::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background: yellow;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px yellow;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+section {
+    margin: 120px auto 50px;
+    padding: 20px;
+    max-width: 600px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px cyan;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 10px 0;
+}
+
+section ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    transition: 0.3s;
+}
+
+section ul li a:hover {
+    color: cyan;
+}
+
+section ul li a i {
+    margin-right: 10px;
+    font-size: 24px;
+}
